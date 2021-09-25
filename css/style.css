@@ -1,0 +1,58 @@
+/* css reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* Mobile first */
+body{
+    background-color:#2f2f2f;
+    color:#0dad59;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+.container{
+  width: 80%;
+  margin: 30px auto;
+}
+
+.contact__form--option{
+  display:block;
+  height: 40px;
+  width: 100px;
+}
+.contact__label--email, .contact__label--password{
+  display: inline-block;
+  width: 120px;
+}
+.contact__input--email, .contact__input--password, .contact__input--tigerType{
+  width: 200px;
+  height: 28px;
+  border-radius: 10px;
+}
+
+.contact__input--submit{
+  width: 120px;
+  font-weight: bold;
+  color: #2f2f2f;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+/* tablet */
+@media only screen and (min-width: 600px){
+  .contact__form--option{
+    display:inline-block;
+  }
+
+}
+
+/* desktop and large screen */
+@media only screen and (min-width: 800px){
+    .contact__form--option{
+      display:inline-block;
+    }
+}

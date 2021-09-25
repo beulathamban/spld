@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SprinLoad</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <main>
+
+      <!-- displays when javascript is not working -->
+      <noscript>
+       For full functionality of this site it is necessary to enable JavaScript.
+       Here are the <a href="https://www.enable-javascript.com/">
+       instructions how to enable JavaScript in your web browser</a>.
+      </noscript>
+
+      <!-- Contact form  -->
+      <div id="contact-form-container" class="contact" role="form" aria-label="Contact form">
+        <br>
+        <h1>Contact form</h1>
+        <br>
+        <br>
+        <br>
+        <!-- method="post" can be added to form as attribute to submit values to server using php -->
+        <form id="contact-form" class="contact__form" action="index.html" aria-label="Contact form">
+
+          <!-- Contact form email -->
+          <div class="contact__form--email">
+            <!-- label to be read by screen readers for visually impaired -->
+            <label for="contact-email" class="contact__label contact__label--email">Email: </label>
+            <!-- characters followed by an @ sign, followed by more characters, and then a "."
+            After the "." sign, add at least 2 letters from a to z -->
+            <input id="contact-email" class="contact__input contact__input--email" type="email" name="email" placeholder="sample@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required >
+          </div>
+          <br>
+          <!-- Contact form password -->
+          <div class="contact__form--password">
+            <label for="contact-password" class="contact__label contact__label--password">Password: </label>
+            <input id="contact-password" class="contact__input contact__input--password" type="password" name="password" pattern=".{8,}" title="Eight or more characters" required>
+          </div>
+          <br>
+          <br>
+
+          <!-- Contact form colour. Grouped together for visual impaired users -->
+          <fieldset class="contact__form--colour">
+
+            <legend class="contact__label contact__label--colour">Choose a colour: </legend>
+            <br>
+
+            <div class="contact__form--option">
+              <input id="contact-colour-blue" class="contact__input contact__input--colour" type="radio" name="colour" value="blue" checked>
+              <label for="contact-colour-blue" class="contact__label contact__label--colour">Blue</label>
+            </div>
+
+            <div class="contact__form--option">
+              <input id="contact-colour-green" class="contact__input contact__input--colour" type="radio" name="colour" value="green">
+              <label for="contact-colour-green" class="contact__label contact__label--colour">Green</label>
+            </div>
+
+            <div class="contact__form--option">
+              <input id="contact-colour-red" class="contact__input contact__input--colour" type="radio" name="colour" value="red">
+              <label for="contact-colour-red" class="contact__label contact__label--colour">Red</label>
+            </div>
+
+            <div class="contact__form--option">
+              <input id="contact-colour-black" class="contact__input contact__input--colour" type="radio" name="colour" value="black">
+              <label for="contact-colour-black" class="contact__label contact__label--colour">Black</label>
+            </div>
+
+            <div class="contact__form--option">
+              <input id="contact-colour-brown" class="contact__input contact__input--colour" type="radio" name="colour" value="brown">
+              <label for="contact-colour-brown" class="contact__label contact__label--colour">Brown</label>
+            </div>
+
+          </fieldset>
+          <br>
+          <br>
+
+          <!-- Contact form animals. Grouped together for  visual impaired users-->
+          <fieldset class="contact__form--animals">
+            <legend class="contact__label contact__label--animals">Choose animals: </legend>
+            <br>
+
+            <div class="contact__form--option">
+              <input id="contact-animals-bear" class="contact__input contact__input--animals" type="checkbox"  name="bear" value="bear">
+              <label for="contact-animals-bear" class="contact__label contact__label--animals"> Bear</label>
+            </div>
+
+            <div class="contact__form--option">
+
+              <input id="contact-animals-tiger" class="contact__input contact__input--animals" type="checkbox"  name="tiger" value="tiger" required>
+              <label for="contact-animals-tiger" class="contact__label contact__label--animals"> Tiger</label>
+            </div>
+
+            <div class="contact__form--option">
+              <input id="contact-animals-snake" class="contact__input contact__input--animals" type="checkbox"  name="snake" value="snake" >
+              <label for="contact-animals-snake" class="contact__label contact__label--animals"> Snake</label>
+            </div>
+
+            <div class="contact__form--option">
+              <input id="contact-animals-donkey" class="contact__input contact__input--animals" type="checkbox"  name="donkey" value="donkey">
+              <label for="contact-animals-donkey" class="contact__label contact__label--animals"> Donkey</label>
+            </div>
+
+          </fieldset>
+          <br>
+
+          <div id="tigerTypeContainer" class="contact__form--tigerType">
+
+          </div>
+          <input id="contact-submit" class="contact__input--submit" type="submit" name="contact-submit" value="Submit">
+
+        </form>
+
+      </div>
+
+    </main>
+  </div>
+
+<script src="js/script.js">
+
+</script>
+</body>
+</html>
